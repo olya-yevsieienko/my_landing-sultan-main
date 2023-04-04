@@ -1,0 +1,290 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: $main;
+  box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+
+  &__content {
+    @extend %position-content;
+    padding-top: 16px;
+    padding-bottom: 15px;
+
+    @include onDesktop {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 70px;
+      padding-bottom: 116px;
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr max-content;
+
+    @include onDesktop {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1;
+      gap: 95px;
+    }
+  }
+
+  &__first-block {
+    @include onPortraitTablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include onDesktop {
+      margin-right: 60px;
+      max-width: 320px;
+      width: 100%;
+      align-items: start;
+    }
+  }
+
+  &__block-desktop {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__header {
+    margin-bottom: 15px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 42px;
+    width: 98px;
+
+    @include onDesktop {
+      height: 66px;
+      width: 156px;
+    }
+  }
+
+  &__custom-btn-wrap {
+    height: 40px;
+    width: 150px;
+
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__price-wrap-desktop {
+    margin-bottom: 20px;
+    height: 60px;
+    width: 214px;
+  }
+
+  &__price-list-title {
+    margin-right: 7px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 12px;
+    line-height: 150%;
+    color: #fff;
+
+    @include onPortraitTablet {
+      font-style: 14px;
+      text-align: center;
+    }
+
+    @include onDesktop {
+
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+
+  &__subscribe {
+    margin: 15px 0;
+
+    @include onTablet {
+      margin: 45px 0 15px;
+    }
+  }
+
+  &__email {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 290px;
+    background: #fff;
+    border-radius: 36px;
+    cursor: pointer;
+
+    @include onPortraitTablet {
+      margin: 0 auto 20px;
+    }
+
+    @include onTablet {
+      margin-bottom: 30px;
+    }
+
+    @include onDesktop {
+      margin: 0;
+      max-width: 282px;
+      width: 100%;
+    }
+  }
+  
+  &__input {
+    padding: 13px 10px 13px 20px;
+    height: 100%;
+    width: 82%;
+    border-radius: 36px;
+    outline: none;
+    border-width: 0;
+    font-size: 12px;
+    line-height: 150%;
+    color: $placeholder;
+  }
+
+  &__email-btn {
+    position: relative;
+    right: 10px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: $button;
+    border-radius: 50%;
+    @extend %button-effects;
+
+    &::after {
+      content: url('../../image/icons/arrow-right-white.svg');
+      position: relative;
+      top: 13px;
+      left: 17px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-family: 'InterSemiBold', serif;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  &__list-item {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #fff;
+    cursor: pointer;
+
+    @include onDesktop {}
+  }
+
+  &__contact {
+    display: block;
+    font-family: 'InterMedium', serif;
+    font-weight: bold;
+    line-height: 150%;
+    color: #fff;
+  }
+  
+  &__descrptn {
+    display: block;
+    width: 152px;
+    font-family: 'InterLight', serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  &__call {
+    font-size: 10px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    color: #fff;
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__visa,
+  &__mastercard {
+    display: block;
+    width: 62px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &__visa {
+    margin-right: 5px;
+    background: url('../../image/visa.svg');
+  }
+
+  &__mastercard {
+    background: url('../../image/mastercard.svg');
+  }
+
+  &__messenger-title {
+    margin-bottom: 18px;
+    margin-top: 50px;
+    position: relative;
+    right: -20px;
+    display: block;
+    color: #fff;
+    line-height: 150%;
+
+    @include onPortraitTablet {
+      right: 0;
+    }
+
+    @include onDesktop {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &__messenger {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__whatsapp,
+  &__telegram {
+    position: relative;
+    right: -20px;
+    display: block;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+
+    @include onPortraitTablet {
+      right: 0;
+    }
+  }
+
+  &__whatsapp {
+    margin-right: 10px;
+    background: url('../../image/whatsapp.svg');
+  }
+
+  &__telegram {
+    background: url('../../image/telegram.svg');
+  }
+}

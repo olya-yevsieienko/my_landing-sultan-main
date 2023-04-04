@@ -1,0 +1,24 @@
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variables.scss';
+
+.menu {
+  display: flex;
+
+  &__item {
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5 ease;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

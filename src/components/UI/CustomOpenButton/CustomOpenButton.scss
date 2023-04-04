@@ -1,0 +1,15 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/extends.scss';
+
+.open-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: $button;
+  @extend %button-effects;
+  cursor: pointer;
+  opacity: 0.5;
+}

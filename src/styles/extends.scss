@@ -1,0 +1,93 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+%position-content {
+  box-sizing: initial;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 290px;
+
+  @include onPortraitTablet {
+    padding: 0 32px;
+    max-width: 796px;
+  }
+
+  @include onTablet {
+    padding: 0 42px;
+    max-width: 940px;
+  }
+
+  @include onDesktop {
+    padding: 0 80px;
+    max-width: 1366px;
+  }
+}
+
+%container-shadow {
+  box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+  border-radius: 10px;
+}
+
+%button-effects {
+  transition: all .5s ease;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+}
+
+%range-effects {
+  transition: all .5s ease;
+
+  &:hover {
+    background: rgb(255, 176, 24, 0.4);
+  }
+  &:active {
+    background: rgb(233, 147, 0, 0.6);
+  }
+}
+
+%font-bold-30 {
+  font-family: 'InterBold', serif;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+%h2 {
+  font-family: 'InterMedium', serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  @include onPortraitTablet {
+    font-size: 28px;
+  }
+
+  @include onTablet {
+    font-size: 32px;
+  }
+
+  @include onDesktop {
+    font-size: 40px;
+  }
+}
+
+%h6 {
+  font-family: 'InterMedium', serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: $secondary;
+}
+
+%line {
+  display: block;
+  width: 0px;
+  border-right: 1px dashed $main;
+  opacity: .3;
+}

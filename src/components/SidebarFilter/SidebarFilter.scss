@@ -1,0 +1,84 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.side-filter {
+  @include onPortraitTablet {
+    margin-right: 7.9%;
+    width: 238px;
+  }
+
+  @include onTablet {
+    margin-right: 6%;
+    width: 200px;
+  }
+
+  @include onDesktop {
+    margin-right: 108px;
+    width: 238px;
+  }
+
+  &__header {
+    margin: 20px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @include onPortraitTablet {
+      width: 238px;
+    }
+  }
+
+  &__open {
+    display: block;
+
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__title{
+    font-size: 16px;
+    line-height: 150%;
+    
+    @include onPortraitTablet {
+      margin-bottom: 10px;
+    }
+  }
+  
+  &__subtitle {
+    @extend %h6;
+  }
+
+  &__categories {
+    display: none;
+
+    @include onPortraitTablet {
+      display: block;
+    }
+  }
+
+  &__category {
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      &::after {
+        content: '';
+        position: relative;
+        bottom: -15px;
+        right: 0;
+        display: block;
+        height: 0px;
+        width: 100%;
+        border: 1px dashed $main;
+        opacity: 0.3;
+      }
+    }
+
+  }
+}

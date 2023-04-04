@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/extends.scss';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: $border-radius;
+  background-color: $button;
+  cursor: pointer;
+  @extend %button-effects;
+
+  &--disabled {
+    cursor: not-allowed;
+  }
+  
+  &__name {
+    font-family: 'InterBold', serif;
+    color: #fff;
+  }
+}

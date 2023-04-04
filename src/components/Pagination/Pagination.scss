@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__left,
+  &__right {
+    display: block;
+    height: 16px;
+    width: 9px;
+    cursor: pointer;
+  }
+
+  &__left {
+    margin-right: 35px;
+    background: url('../../image/icons/pagination-left.svg');
+  }
+
+  &__right {
+    margin-left: 14px;
+    background: url('../../image/icons/pagination-right.svg');
+  }
+
+  &__number {
+    margin-right: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'InterMedium', serif;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+
+    &--active {
+      position: relative;
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    }
+  }
+}

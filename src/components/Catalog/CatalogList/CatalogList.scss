@@ -1,0 +1,33 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variables.scss';
+
+.list {
+  &__content {
+    margin-top: 38px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      margin-top: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 21px;
+      row-gap: 21px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 0px;
+      gap: 15px;
+    }
+  }
+
+  &__pagination {
+    margin-bottom: 35px;
+  }
+}

@@ -1,0 +1,84 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.categories {
+  &__list {
+    margin-bottom: 25px;
+
+    @include onPortraitTablet {
+      margin-bottom: 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      column-gap: 11px;
+      row-gap: 4px;
+    }
+
+    @include onTablet {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    @include onDesktop {
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: 0;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    transition: all .5s ease;
+    
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    
+    &:hover {
+      font-weight: bold;
+    }
+
+    &--active {
+      background-color: $button-light;
+    }
+    
+    @include onPortraitTablet {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      font-size: 12px;
+      text-align: center;
+      box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.06);
+      border-radius: 10px;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        font-weight: normal;
+        box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    @include onDesktop {
+      height: 70px;
+      
+      &:nth-child(-n + 4) {
+        width: 100px;
+      }
+  
+      &:nth-child(n + 5) {
+        width: 120px;
+      }
+  
+      &:nth-child(9) {
+        width: 140px;
+      }
+    }
+  }
+}

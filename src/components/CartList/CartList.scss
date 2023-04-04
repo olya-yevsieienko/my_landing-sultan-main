@@ -1,0 +1,50 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.cart-list {
+  @include onDesktop {
+    margin-bottom: 100px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 476px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include onPortraitTablet {
+      height: 280px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include onDesktop {
+      flex-direction: row;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        display: block;
+        height: 30px;
+        width: 100%;
+        border-top: 1px dashed $main;
+        opacity: .3;
+    
+        @include onPortraitTablet {
+          position: absolute;
+          top: -10px;
+        }
+      }
+    }
+
+  }
+}

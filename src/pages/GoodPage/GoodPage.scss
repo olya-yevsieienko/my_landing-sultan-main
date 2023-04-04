@@ -1,0 +1,59 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.good-card {
+  @extend %position-content;
+  margin-top: 20px;
+
+  @include onPortraitTablet {
+     margin-top: 45px;
+  }
+
+  &__back {
+    margin-bottom: 35px;
+
+    @include onPortraitTablet {
+      margin-bottom: 0;
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+    
+    @include onPortraitTablet {
+      display: flex;
+    }
+
+    @include onDesktop {
+      margin: 45px 0 50px 0;
+    }
+  }
+
+  &__nav-link {
+    font-family: 'InterLight', serif;
+    line-height: 120%;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--active {
+      opacity: .5;
+    }
+  }
+
+  &__nav-line {
+    display: block;
+    height: 16px;
+    width: 0px;
+    border-right: 1px dashed $main;
+    opacity: .3;
+  }
+}

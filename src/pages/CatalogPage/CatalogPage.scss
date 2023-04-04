@@ -1,0 +1,128 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.catalog {
+  @extend %position-content;
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  @include onPortraitTablet {
+     margin-top: 45px;
+  }
+
+  &__back {
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+    
+    @include onPortraitTablet {
+      display: flex;
+    }
+
+    @include onDesktop {
+      margin: 45px 0 50px 0;
+    }
+  }
+
+  &__nav-link {
+    font-family: 'InterLight', serif;
+    line-height: 120%;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--active {
+      opacity: .5;
+    }
+  }
+
+  &__nav-line {
+    display: block;
+    height: 16px;
+    width: 0px;
+    border-right: 1px dashed $main;
+    opacity: .3;
+  }
+
+  &__come-back {
+    display: flex;
+
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__header {
+    margin-top: 25px;
+
+    @include onPortraitTablet {
+      margin: 50px 0 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  &__sort {
+    display: none;
+
+    @include onPortraitTablet {
+      display: block;
+    }
+  }
+
+  &__title {
+    @extend %h2;
+  }
+
+  &__categories {
+    display: none;
+
+    @include onPortraitTablet {
+      display: block;
+    }
+
+    @include onDesktop {
+      margin-bottom: 30px;
+    }
+
+    &--mobile {
+      @include onPortraitTablet {
+        display: none;
+      }
+    }
+  }
+
+  &__main {
+    @include onPortraitTablet {
+      margin-top: 30px;
+      display: flex;
+    }
+  }
+
+  &__mobile-sort {
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__list-empty {
+    margin: 40px auto 0;
+    font-size: 24px;
+
+    @include onPortraitTablet {
+      font-size: 30px;
+    }
+  }
+}

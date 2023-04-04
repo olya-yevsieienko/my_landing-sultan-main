@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/extends.scss';
+
+.back-button {
+  display: flex;
+  align-items: center;
+  
+  &__arrow {
+    margin-right: 5px;
+    position: relative;
+    display: block;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: $button;
+    opacity: .3;
+    cursor: pointer;
+
+    @extend %button-effects;
+    
+    &::after {
+      content: url('../../../image/icons/arrow-back.svg');
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      display: block;
+      height: 8px;
+      width: 4px;
+    }
+  }
+  
+  &__name {
+    font-family: 'InterSemiBold', serif;
+    font-size: 10px;
+    line-height: 120%;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+}

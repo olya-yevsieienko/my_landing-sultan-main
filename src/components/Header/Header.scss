@@ -1,0 +1,303 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.header {
+  position: relative;
+
+  &__content {
+    &::before {
+      content: '';
+      position: absolute;
+      top: $header;
+      right: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $main;
+      opacity: 0.2;
+    }
+
+    &::after {
+      content: '';
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $main;
+      opacity: 0.2;
+    }
+  }
+  
+  &__main {
+    @extend %position-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header;
+
+    @include onPortraitTablet {
+      height: 108px;
+    }
+  }
+
+  &__mobile-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: $button;
+
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 98x;
+    height: 41px;
+
+    @include onPortraitTablet {
+      height: 66px;
+      width: 156px;
+    }
+
+    @include onTablet {
+      margin-right: 20px;
+    }
+
+    @include onDesktop {
+      margin-right: 38px;
+    }
+  }
+
+  &__catalog {
+    display: none;
+
+    @include onTablet {
+      margin-right: 6%;
+      display: flex;
+      height: 60px;
+      width: 160px;
+    }
+    
+    @include onDesktop {
+      margin-right: 15px;
+      display: flex;
+      height: 60px;
+      width: 14%;
+    }
+
+    &--btn-name {
+      margin-right: 12px;
+    }
+  }
+
+  &__search {
+    display: none;
+
+    @include onPortraitTablet {
+      display: block;
+      width: 200px;
+    }
+
+    @include onDesktop {
+      margin-right: 2.5%;
+      width: 19%;
+    }
+  }
+
+  &__contact {
+    display: none;
+
+    @include onPortraitTablet {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+    }
+  }
+
+  &__call-order {
+    display: none;
+
+    @include onDesktop {
+      position: relative;
+      margin-right: 3.6%;
+      display: flex;
+      align-items: center;
+      text-align: right;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 26px;
+        right: 6px;
+        display: block;
+        height: 8px;
+        width: 8px;
+        border: 2px solid #F0F6FA;
+        border-radius: 50%;
+        background: #1FD85D;
+      }
+    }
+  }
+
+  &__number {
+    margin-bottom: 5px;
+    font-family: 'InterSemiBold', serif;
+  }
+
+  &__schedule {
+    margin-bottom: 5px;
+    font-family: 'InterLight', serif;
+    font-size: 12px;
+  }
+
+  &__call {
+    width: 81px;
+    font-size: 10px;
+    border-bottom: 1px solid $main;
+    cursor: pointer;
+  }
+
+  &__consultant {
+    display: none;
+
+    @include onDesktop {
+      margin-left: 10px;
+      display: block;
+    }
+  }
+
+  &__price-list {
+    display: none;
+
+    @include onDesktop {
+      margin-right: 3.8%;
+      display: flex;
+      height: 60px;
+      width: 15%;
+      min-width: 120px;
+    }
+
+    &--btn-name {
+      margin-right: 14px;
+    }
+  }
+
+  &__basket {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-basket {
+    position: relative;
+    display: block;
+    height: 16px;
+    width: 22px;
+    background: url(../../image/icons/basket.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include onPortraitTablet {
+      margin-right: 28px;
+    }
+  }
+
+  &__basket-items {
+    position: absolute;
+    top: -10px;
+    right: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background-color: $button;
+  }
+
+  &__descrpt {
+    display: none;
+
+    @include onPortraitTablet {
+      display: flex;
+      flex-direction: column;
+      width: 72px;
+    }
+  }
+
+  &__basket-name {
+    font-family: 'InterLight', serif;
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  &__amount {
+    font-family: 'InterSemiBold', serif;
+    line-height: 150%;
+    color: $secondary;
+  }
+
+  &__mobile-head {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include onPortraitTablet {
+      display: none;
+    }
+  }
+
+  &__mobile-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-right: 6px;
+    display: block;
+    
+    &--catalog {
+      height: 15px;
+      width: 15px;
+      background: url('../../image/icons/catalog.svg');
+    }
+
+    &--search {
+      height: 12px;
+      width: 12px;
+      background: url('../../image/icons/search.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__btn-name {
+    font-family: 'InterSemiBold', serif;
+    font-size: 12px;
+  }
+
+  &__mobile-line {
+    position: absolute;
+    top: 5px;
+    height: 30px;
+    border-right: 1px dashed $main;
+    opacity: 0.1;
+  }
+}

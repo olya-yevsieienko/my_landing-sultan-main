@@ -1,0 +1,9 @@
+@import './styles/extends.scss';
+
+.App {
+  &__content {
+    margin-bottom: 1000px;
+    min-height: 100vh;
+    height: 100%;
+  }
+}

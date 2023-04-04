@@ -1,0 +1,145 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+
+.menu {
+  position: absolute;
+  top: 102px;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+
+  @include onPortraitTablet {
+    display: none;
+  }
+
+  &__content {
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+  }
+
+  &__icon {
+    margin-right: 16px;
+    display: block;
+    width: 14px;
+    height: 18px;
+  }
+
+  &__option {
+    font-family: 'InterSemiBold', serif;
+    line-height: 130%;
+    color: $secondary;
+  }
+
+  &__note {
+    font-family: 'InterLight', serif;
+    font-size: 12px;
+
+    &--time {
+      margin-top: 5px;
+    }
+  }
+
+  &__btn-call {
+    position: relative;
+    margin-right: 5px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: $button;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::after {
+      content: url('../../../image/icons/call-white.svg');
+      position: absolute;
+      top: 7px;
+      left: 9px;
+      display: block;
+    }
+  }
+
+  &__order {
+    font-size: 10px;
+    line-height: 150%;
+    border-bottom: 1px solid $main;
+  }
+
+  &__contacts {
+    margin-bottom: 25px;
+
+    &::after {
+      content: '';
+      position: relative;
+      bottom: -25px;
+      display: block;
+      height: 0;
+      width: 290px;
+      border-bottom: 1px dashed $main;
+      opacity: 0.2;
+    }
+  }
+
+  &__title {
+    margin: 25px 0;
+    font-family: 'InterSemiBold', serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &__mobile-list {
+    margin-bottom: 22px;
+  }
+
+  &__list-item {
+    font-size: 14px;
+    line-height: 150%;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__mobile-button {
+    display: block;
+    height: 70px;
+    width: 290px;
+  }
+
+  &__button-text {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,117 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 17, 17, 0.5);
+  overflow: hidden;
+  
+  &__content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 288px; 
+    width: 290px;
+    background: #fff;
+    border-radius: 8px;
+  
+    @include onPortraitTablet {
+      padding: 36px;
+      height: 278px;
+      width: 440px;
+    }
+
+    @include onPortraitTablet {
+      padding: 36px;
+      height: 340px;
+      width: 552px;
+    }
+
+    @include onDesktop {
+      padding: 36px;
+      height: 424px;
+      width: 736px;
+    } 
+  }
+
+  &__cross {
+    margin-bottom: 32px;
+    padding: 0 0 30px 30px;
+    display: flex;
+    align-self: flex-end;
+    height: 12px;
+    width: 12px;
+    background: url('../../image/icons/cross.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    cursor: pointer;
+
+    @include onTablet {
+      margin-bottom: 38px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 66px;
+    }
+  }
+
+  &__done {
+    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
+    height: 60px;
+    width: 60px;
+    background: $button;
+    border-radius: 50%;
+
+    &::after {
+      content: url('../../image/icons/done.svg');
+      position: relative;
+      top: 24px;
+      left: 18px;
+      display: block;
+    }
+
+    @include onDesktop {
+       margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: 'InterMedium', serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: $secondary;
+
+    @include onDesktop {
+      margin-bottom: 20px;
+      font-size: 40px;
+   }
+  }
+
+  &__text {
+    font-family: 'InterLight', serif;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+
+    @include onDesktop {
+      font-size: 20px;
+   }
+  }
+}

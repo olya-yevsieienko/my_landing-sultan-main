@@ -1,0 +1,67 @@
+@import './styles/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'InterRegular', serif;
+  font-size: 14px;
+  color: $main;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+// weight: 300
+@font-face {
+  font-family: "InterLight";
+  src: local("InterLight"),
+   url("./fonts/InterLight.ttf") format("truetype");
+}
+
+// weight: 400
+@font-face {
+  font-family: "InterRegular";
+  src: local("InterRegular"),
+   url("./fonts/InterRegular.ttf") format("truetype");
+}
+
+// weight: 500
+@font-face {
+  font-family: "InterMedium";
+  src: local("InterMedium"),
+   url("./fonts/InterMedium.ttf") format("truetype");
+}
+
+// weight: 600
+@font-face {
+  font-family: "InterSemiBold";
+  src: local("InterSemiBold"),
+   url("./fonts/InterSemiBold.ttf") format("truetype");
+}
+
+
+//700
+@font-face {
+  font-family: "InterBold";
+  src: local("InterBold"),
+   url("./fonts/InterBold.ttf") format("truetype");
+}

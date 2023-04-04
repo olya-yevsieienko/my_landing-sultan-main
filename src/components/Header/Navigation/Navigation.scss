@@ -1,0 +1,109 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+
+.navigation {
+  &::after {
+    content: '';
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $main;
+    opacity: 0.2;
+  }
+  
+  &__content {
+    @extend %position-content;
+    display: none;
+    
+    @include onPortraitTablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: $header;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &:last-child {
+      display: none;
+    }
+
+    @include onTablet {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      &:last-child {
+        display: flex;
+      }
+    }
+
+    @include onDesktop {
+      &:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 42px;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    margin-right: 16px;
+    display: block;
+    height: 14px;
+    width: 14px;
+  }
+  
+  &__address {
+    background: url(../../../image/icons/address.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__mail {
+    background: url(../../../image/icons/mail.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__option {
+    font-family: "InterSemiBold", serif;
+    font-size: 12px;
+    line-height: 18px;
+    transition: .5s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary;
+    }
+
+    @include onTablet {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__note {
+    font-family: "InterLight", serif;
+    font-size: 12px;
+  }
+}

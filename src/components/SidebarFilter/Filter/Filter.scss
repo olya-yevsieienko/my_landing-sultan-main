@@ -1,0 +1,159 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variables.scss';
+
+.filter {
+  width: 290px;
+
+  @include onPortraitTablet {
+    width: 238px;
+  }
+
+  @include onTablet {
+    width: 200px;
+  }
+
+  @include onDesktop {
+    width: 238px;
+  }
+
+  &__price {
+    margin-bottom: 16px;
+    display: flex;
+  }
+
+  &__price-name {
+    margin-right: 5px;
+    font-family: 'InterLight', serif;
+  }
+
+  &__currency {
+    font-family: 'InterMedium', serif;
+    color: $secondary;
+  }
+
+  &__range {
+    margin-bottom: 34px;
+    display: flex;
+  }
+
+  &__range-line {
+    margin: 0 10px;
+  }
+
+  &__range-wrap {
+    display: block;
+    height: 24px;
+    max-width: 42%;
+    width: 100%;
+  }
+  
+  &__price-input {
+    height: 100%;
+    width: 100%;
+    font-family: 'InterLight', serif;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-width: 0;
+    border-radius: 16px;
+    outline: none;
+    cursor: pointer;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        display: none;
+        -webkit-appearance: none;
+        margin: 0;
+    }
+  }
+
+  &__subtitle {
+    @extend %h6;
+    font-weight: normal;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__search {
+    margin-bottom: 15px;
+  }
+
+  &__check-item {
+    &:not(:last-child ){
+      margin-bottom: 5px;
+    }
+  }
+
+  &__check-title {
+    margin: 0 5px 0 10px ;
+    line-height: 21px;
+  }
+
+  &__check-count {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  &__btn-show-all {
+    margin: 15px 0 20px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__show-all-img {
+    margin-left: 5px;
+    display: block;
+    height: 7px;
+    width: 7px;
+    background: url('../../../image/icons/show.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__buttons {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__submit {
+    height: 60px;
+    width: 216px;
+
+    @include onPortraitTablet {
+      width: 170px;
+    }
+
+    @include onTablet {
+      width: 120px;
+    }
+  }
+
+  &__reset {
+    position: relative;
+    display: block;
+    height: 59px;
+    width: 59px;
+    border-radius: 50%;
+    background-color: $button;
+    cursor: pointer;
+
+    &::after {
+      content: url('../../../image/icons/bin.svg');
+      position: absolute;
+      top: 20px;
+      right: 21px;
+    }
+  }
+
+  &__categories {
+    display: none;
+
+    @include onPortraitTablet {
+      display: block;
+    }
+  }
+}

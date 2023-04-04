@@ -1,0 +1,129 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variables.scss';
+
+.control {
+  display: flex;
+  align-items: center;
+
+  @include onDesktop {
+    justify-content: end;
+  }
+
+  &__control {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: '';
+      position: relative;
+      right: -15px;
+      height: 50px;
+      @extend %line;
+
+      @include onDesktop {
+        right: -44px;
+      }
+    }
+    
+    @include onDesktop {
+      margin: 0 44px;
+
+      &::before {
+        content: '';
+        position: relative;
+        left: -44px;
+        display: block;
+        height: 50px;
+        width: 0px;
+        border-right: 1px dashed $main;
+        opacity: .3;
+      }
+    }
+  }
+
+  &__amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86px;
+    
+    &::after {
+      content: '';
+      position: relative;
+      right: -14px;
+      height: 50px;
+      @extend %line;
+
+      @include onPortraitTablet {
+        right: 0;
+      }
+    }
+    
+    @include onPortraitTablet {
+      width: 130px;
+    }
+
+    @include onTablet {
+      width: 160px;
+    }
+
+    @include onDesktop {
+      width: 200px;
+    }
+  }
+  
+  &__price {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'InterBold', serif;
+    font-size: 16px;
+    line-height: 130%;
+
+    @include onPortraitTablet {
+      width: 130px;
+      font-size: 20px;
+    }
+
+    @include onTablet {
+      font-size: 24px;
+    }
+    
+    @include onDesktop {
+      width: 200px;
+      font-size: 30px;
+    }
+  }
+
+  &__remove {
+    position: relative;
+    margin-left: 13px;
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: $button;
+    cursor: pointer;
+    @extend %button-effects;
+
+    &::after {
+      content: url('../../../image/icons/remove-white.svg');
+      position: absolute;
+      top: 20.2px;
+      right: 23px;
+      display: block;
+      width: 17px;
+      height: 19px;
+    }
+
+    @include onTablet {
+      margin-left: 24px;
+    }
+
+    @include onDesktop {
+      margin-left: 42px;
+    }
+  }
+}

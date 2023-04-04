@@ -1,0 +1,103 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variables.scss';
+
+.cart-good {
+  position: relative;
+  padding: 20px 0 25px;
+  display: flex;
+  flex-direction: column;
+
+  @include onPortraitTablet {
+    padding: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  
+  @include onDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &::before {
+    content: '';
+    position: relative;
+    top: -20px;
+    display: block;
+    width: 100%;
+    border-top: 1px dashed $main;
+    opacity: .3;
+
+    @include onPortraitTablet {
+      position: absolute;
+      top: -10px;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__img {
+    max-height: 192px;
+    width: 100%;
+    object-fit: contain;
+
+    @include onDesktop {
+      margin-right: 20px;
+      min-width: 120px;
+      max-width: 282px;
+      width: 100%;
+    }
+  }
+
+  &__option {
+    margin-bottom: 15px;
+
+    @include onDesktop {
+      margin-right: 20px;
+    }
+  }
+
+  &__size {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__size-type {
+    margin-right: 8px;
+    filter: opacity(20%);
+  }
+  
+  &__size-value {
+    font-size: 12px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: 'InterMedium', serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 24px;
+
+    @include onDesktop {
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      font-family: 'InterBold', serif;
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  &__descrptn {
+    display: block;
+    max-width: 444px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}

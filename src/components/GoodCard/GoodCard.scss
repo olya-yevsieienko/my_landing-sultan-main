@@ -1,0 +1,312 @@
+@import '../../styles/extends.scss';
+@import '../../styles/mixin.scss';
+@import '../../styles/variables.scss';
+
+.card {
+  margin: 25px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @include onPortraitTablet {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  @include onTablet {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  @include onDesktop {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__img {
+    position: relative;
+    margin-bottom: 15px;
+    display: block;
+    height: 180px;
+    width: 256px;
+    object-fit: contain;
+    z-index: -1;
+
+    @include onPortraitTablet {
+      top: -40px;
+      height: max-content;
+      width: 100%;
+    }
+
+    @include onTablet {
+      top: -80px;
+    }
+
+    @include onDesktop {
+      top: -60px;
+      height: 471px;
+      max-width: 664px;
+      width: 100%;
+    }
+  }
+
+  &__main {
+    display: block;
+  }
+
+  &__availability {
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'InterMedium', serif;
+    color: #1fd85d;
+  }
+
+  &__good-name {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+  }
+  
+  &__name-en {
+    margin-right: 6px;
+    font-family: 'InterBold', serif;
+    font-size: 16px;
+    line-height: 150%;
+
+
+    @include onPortraitTablet {
+      font-size: 20px;
+    }
+  
+    @include onTablet {
+      font-size: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 30px;
+    }
+  }
+
+  &__name-ru {
+    line-height: 150%;
+
+    @include onPortraitTablet {
+      font-size: 20px;
+    }
+  
+    @include onTablet {
+      font-size: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 30px;
+    }
+  }
+
+  &__order {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include onPortraitTablet {
+      max-width: 300px;
+      width: 100%;
+    }
+  
+    @include onTablet {
+      max-width: 440px;
+      width: 100%;
+    }
+  
+    @include onDesktop {
+      max-width: 580px;
+      width: 100%;
+    }
+  }
+
+  &__good-price {
+    margin-right: 28px;
+    font-family: 'InterBold', serif;
+    font-size: 20px;
+    line-height: 130%;
+
+    @include onDesktop {
+      margin-right: 40px;
+    }
+  }
+
+  &__control {
+    margin-right: 38px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__decrease,
+  &__increase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 34px;
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 10px;
+    cursor: pointer;
+    @extend %range-effects;
+  }
+
+  &__count {
+    width: 45px;
+    text-align: center;
+  }
+
+  &__cart-btn {
+    margin: 20px 30px 20px 0;
+    display: block;
+    height: 60px;
+    width: 184px;
+
+    @include onDesktop {
+      margin-right: 80px;
+    }
+  }
+
+  &__cart-title {
+    margin-right: 12px;
+  }
+
+  &__share-wrap {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  &__delivery {
+    margin-bottom: 10px;
+    padding: 20px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.08);
+    border-radius: 10px;
+
+    @include onTablet {
+      margin-right: 10px;
+      padding: 20px 20px;
+      max-width: 260px;
+      width: 100%;
+    }
+  
+    @include onDesktop {
+      max-width: 316px;
+      width: 100%;
+    }
+  }
+
+  &__price-list {
+    margin-bottom: 20px;
+    padding: 30px 116px 30px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'InterBold', serif;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.08);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5 ease;
+    
+    &::after {
+      content: url('../../image/icons/download.svg');
+      position: relative;
+      top: 0;
+      left: 12px;
+      display: block;
+      height: 13px;
+      width: 12px;
+    }
+    
+    @include onPortraitTablet {
+      padding: 30px 44px 30px 18px;
+      width: 156px;
+    }
+    
+    @include onDesktop{
+      padding: 30px 64px 30px 38px;
+      width: 186px;
+    }
+
+    &:hover {
+      box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1);
+    }
+  }
+
+  &__option {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__option-name {
+    margin-right: 5px;
+    font-family: 'InterLight', serif;
+  }
+
+  &__option-value {
+    font-family: 'InterMedium', serif;
+  }
+
+  &__descrptn {
+    margin-top: 30px;
+  }
+  
+  &__features {
+    position: relative;
+    margin-top: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      display: block;
+      height: 0;
+      width: 270px;
+      border: 1px dashed $main;
+      opacity: 0.3;
+    }
+  }
+
+  &__open-subtitle {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-family: 'InterMedium', serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: $secondary;
+    cursor: pointer;
+  }
+
+  &__icon-show {
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixin.scss';
+@import '../../../styles/variables.scss';
+
+.search {
+  display: none;
+
+  @include onPortraitTablet {
+    padding: 13px 10px 13px 20px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 36px;
+    background-color: $light-gray;
+    height: 60px;
+  }
+
+  &__input {
+    height: 100%;
+    width: 100%;
+    border-width: 0;
+    background-color: $light-gray;
+    border-radius: 36px;
+    outline: none;
+  }
+
+  &__magnifier {
+    position: absolute;
+    right: 10px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $button;
+    cursor: pointer;
+
+    &::after {
+      content: url('../../../image/icons/search-white.svg');
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: block;
+    }
+  }
+}

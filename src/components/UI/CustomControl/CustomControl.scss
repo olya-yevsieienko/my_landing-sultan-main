@@ -1,0 +1,26 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixin.scss';
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__decrease,
+  &__increase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 34px;
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 10px;
+    cursor: pointer;
+    @extend %range-effects;
+  }
+
+  &__count {
+    width: 45px;
+    text-align: center;
+  }
+}

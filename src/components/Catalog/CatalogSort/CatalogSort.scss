@@ -1,0 +1,70 @@
+@import '../../../styles/variables.scss';
+
+.sort {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  &__title {
+    margin-right: 5px;
+    font-family: 'InterMedium', serif;
+    font-size: 16px;
+    line-height: 150%;
+    color: $secondary;
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+  }
+
+  &__select-arrow {
+    margin-left: 5px;
+    display: block;
+    height: 7px;
+    width: 7px;
+    background: url('../../../image/icons/show.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__list {
+    position: absolute;
+    bottom: -148px;
+    right: 0;
+    width: 190px;
+    background-color: #fff;
+    box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+  }
+
+  &__type {
+    padding: 8px 2px;
+    height: 36px;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: center;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: relative;
+        bottom: -4px;
+        right: 4px;
+        left: 4px;
+        display: block;
+        height: 0;
+        width: 96%;
+        border-bottom: 1px dashed $main;
+        opacity: .2;
+      }
+    }
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

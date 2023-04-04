@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "name": "AOS",
+    "nameRu": "Ср-во для мытья посуды Апельсин+мята",
+    "url": "https://s3-alpha-sig.figma.com/img/a547/282f/fe358665dbfc78adb0acda1179e93e2a?Expires=1680480000&Signature=qspkDy2dZ0057sfvhuprW06Je4eHWcpHm9DW5ua0sFemTfKXuzI8YlyiDW1k-WeCiSiTQTSeQHBszzegEPbHwPVZjbhkRNuQNeQu4J8fivTGKIvoNycdyhD6~rMqfe3rHh46xaSyiyyNPYIvX7~lDgiJa-r2w8WNpfcQs8ACoS8VxC-vXbIeP16-~A2ueF-N9NThnMeJUHtEu3FvrZJM3fdF3NmMRITcuJUK-WfSIkXHDrl0eCYBuAA9K8o2LI3TsDOBrovMlE61RcgRPPz8mOGsckEnLVWA8LyexvsNthKnoHxYAclxUj95emIRYJmKSG-vhw5nwUe~q6Eh0TZsDA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "sizeType": "volume",
+    "size": "450 мл",
+    "type": ["Уход за руками"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Grifon",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "AOS",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 48.76,
+    "amount": 1
+  },
+  {
+    "id": 2,
+    "name": "BioMio BIO-SPAP",
+    "nameRu": "Экологичное туалетное мыло. Литсея и бергамот",
+    "url": "https://s3-alpha-sig.figma.com/img/820a/961d/67c0ca0b8a6e475460317236d0091940?Expires=1680480000&Signature=OQfcBe5H8fU2FAUGsrUloBP7jh5y0fVzJqrY2Drhmh42quW0NTJ54FLE6aO6-f8ns4TYWhZga-Vu9CF6pVyHIMUOo7HSswg1-PGz8LHDfG-89qk3baJmPayj-ldFGw1Qw3oj6DA5J8pyDh3VqK2zegEwAbdoiVYdZ5iXVmEzGfplhD~WM~L53OoHlBeu1XhRl~VAULe5aYmhPBt6WE~IXzpK~iJp~g40lhuhl615QO4fGnnk5xMPsBV0vFvsmrQ0ucRm5ewa5~vNUW4QXed2zH2JkXyt9kkSAuPttyIegnthdlLAFHa7j-MNqtu3KLcaiaZAMyuBODD~fwJNVgw~uA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "sizeType": "weight",
+    "size": "90 г",
+    "type": ["Уход за телом", "Уход за руками", "Уход за ногами"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "BioMio",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "BioMio",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 48.76,
+    "amount": 1
+  },
+  {
+    "id": 3,
+    "name": "AOS",
+    "nameRu": "Cредство для мытья посуды Crystal",
+    "url": "https://s3-alpha-sig.figma.com/img/bb80/1e6a/432e70783222acc943e3f7db90754e36?Expires=1680480000&Signature=LMmkH5iynhjez8HddvvOVwzJ-lPf6l8K-6GYc9o9t08ntGjYIJDMZwP03Zx85GWfbeoo3pWK33gTIwRjZ~caOE3MZV00ZM8mIdkB8FupE4rlswxG79a0FMi2CErAChseoYqQhmuq~r7eOXQPjN1RHQX0T2FWu59Y-G3uUmyFIuVtS6Ytq6iVY3tcCiG~Nq3ByWpf3RvrAcO0UIvPt~~8sDlSlUNgGOD7QSrxO7hubU4ed7w0OhJJorciAkjYDH22KGuujuVKsNY2UQwfc1M4wB~lSz4YadIP0Xiau~BKDxZ3l1rcH-PFiJdXduMo5U3eMRGeLh315-c7L0ksI9tuMw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+    "sizeType": "volume",
+    "size": "450 мл",
+    "type": ["Уход за руками"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Нэфис",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "AOS",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 48.76,
+    "amount": 1
+  },
+  {
+    "id": 4,
+    "name": "Nivea Intimate Sensitive",
+    "nameRu": "Гель для интимной гигиены, с молочной кислотой",
+    "url": "https://ir.ozone.ru/s3/multimedia-f/wc1000/6459866211.jpg",
+    "sizeType": "volume",
+    "size": "250 мл",
+    "type": ["Гигиеническая продукция"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Nivea",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "Nivea",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 48.76,
+    "amount": 1
+  },
+  {
+    "id": 5,
+    "name": "Wonder Hair Oil",
+    "nameRu": "Увлажняющее масло для волос",
+    "url": "https://ir.ozone.ru/s3/multimedia-1/wc1000/6009675109.jpg",
+    "sizeType": "volume",
+    "size": "100 мл",
+    "type": ["Уход за волосами"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "L'ador",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "L'ador Company",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 48.76,
+    "amount": 1
+  },
+  {
+    "id": 6,
+    "name": "Bio Shower Gel",
+    "nameRu": "Натуральный гель для душа с эфирными маслами. Апельсин и бергамот",
+    "url": "https://images.apteka.ru/original_a2fa5078-02ca-493b-8469-2eb4eb200949.webp",
+    "sizeType": "volume",
+    "size": "250 мл",
+    "type": ["Уход за телом", "Уход за руками"],
+    "barcode": "4604049058948",
+    "manufacturer": {
+      "name": "BioMio",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "BioMio",
+      "number": "4604049058948"
+    },
+    "itemNumber": "4604049058948",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 98.78,
+    "amount": 1
+  },
+  {
+    "id": 7,
+    "name": "Bio-Soap Baby",
+    "nameRu": "Детское жидкое мыло",
+    "url": "https://ir.ozone.ru/s3/multimedia-g/wc1000/6547053820.jpg",
+    "sizeType": "volume",
+    "size": "300 мл",
+    "type": ["Уход за руками", "Уход за телом"],
+    "barcode": "460456787548",
+    "manufacturer": {
+      "name": "AOS",
+      "number": "478404"
+    },
+    "brand": {
+      "name": "AOS",
+      "number": "460456787548"
+    },
+    "itemNumber": "460456787548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 108.3,
+    "amount": 1
+  },
+  {
+    "id": 8,
+    "name": "DermoPure Fluid",
+    "nameRu": "Солнцезащитный флюид против пигментации SPF 50+",
+    "url": "https://ir.ozone.ru/s3/multimedia-r/wc1000/6387182475.jpg",
+    "sizeType": "volume",
+    "size": "50 мл",
+    "type": ["Уход за телом", "Уход за ногами", "Средства для загара"],
+    "barcode": "4604398097548",
+    "manufacturer": {
+      "name": "Eucerin",
+      "number": "460824"
+    },
+    "brand": {
+      "name": "Comedex",
+      "number": "4604398097548"
+    },
+    "itemNumber": "4604398097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 298.76,
+    "amount": 1
+  },
+  {
+    "id": 9,
+    "name": "Nivea Soft",
+    "nameRu": "Интенсивный увлажняющий крем для лица, рук и тела. Mасло жожоба и витамино Е",
+    "url": "https://ir.ozone.ru/s3/multimedia-5/wc1000/6577984001.jpg",
+    "sizeType": "volume",
+    "size": "100 мл",
+    "type": ["Уход за ногами", "Уход за руками", "Уход за телом"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Nivea",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "AOS",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 88.54,
+    "amount": 1
+  },
+  {
+    "id": 10,
+    "name": "Perioe Pumping",
+    "nameRu": "Зубная паста освежающая Breath Care",
+    "url": "https://ir.ozone.ru/s3/multimedia-4/wc1000/6506480332.jpg",
+    "sizeType": "weight",
+    "size": "285 г",
+    "type": ["Гигиена полости рта"],
+    "barcode": "4609234597548",
+    "manufacturer": {
+      "name": "Perioe",
+      "number": "469234"
+    },
+    "brand": {
+      "name": "Perioe",
+      "number": "4609234597548"
+    },
+    "itemNumber": "4609234597548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 143.26,
+    "amount": 1
+  },
+  {
+    "id": 11,
+    "name": "Synergetic deodorant",
+    "nameRu": "Натуральный дезодорант гипоаллергенный",
+    "url": "https://ir.ozone.ru/s3/multimedia-w/wc1000/6362551964.jpg",
+    "sizeType": "volume",
+    "size": "50 мл",
+    "type": ["Уход за телом"],
+    "barcode": "4604084739548",
+    "manufacturer": {
+      "name": "Synergetic",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "NEO Synergetic",
+      "number": "4604084739548"
+    },
+    "itemNumber": "4604084739548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 88.7,
+    "amount": 1
+  },
+  {
+    "id": 12,
+    "name": "BioMio Baby-SOAP",
+    "nameRu": "Детское крем-мыло твердое BioMio. Экологичное универсальное с маслом ши",
+    "url": "https://ir.ozone.ru/s3/multimedia-k/wc1000/6470346644.jpg",
+    "sizeType": "weight",
+    "size": "90 г",
+    "type": ["Уход за телом", "Уход за руками"],
+    "barcode": "4604049997548",
+    "manufacturer": {
+      "name": "BioMio",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "BioMio",
+      "number": "4604049997548"
+    },
+    "itemNumber": "4604049997548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 38.76,
+    "amount": 1
+  },
+  {
+    "id": 13,
+    "name": "Novosvit Кератолитик",
+    "nameRu": "Пилинг-скатка против огрубевшей кожи стоп",
+    "url": "https://ir.ozone.ru/s3/multimedia-7/wc1000/6091556935.jpg",
+    "sizeType": "volume",
+    "size": "75 мл",
+    "type": ["Уход за ногами"],
+    "barcode": "46040494580548",
+    "manufacturer": {
+      "name": "Novosvit",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "AO Laboratory",
+      "number": "46040494580548"
+    },
+    "itemNumber": "46040494580548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 65.7,
+    "amount": 1
+  },
+  {
+    "id": 14,
+    "name": "Lipid Restore Cream",
+    "nameRu": "Липо-крем для рук и ногтей восстанавливающий. Масло ши (5%) и Д-пантенол (3%)",
+    "url": "https://ir.ozone.ru/s3/multimedia-m/wc1000/6401419894.jpg",
+    "sizeType": "volume",
+    "size": "100 мл",
+    "type": ["Уход за руками"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "ARAVIA",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "SUPERFLEXY",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 48.76,
+    "amount": 1
+  },
+  {
+    "id": 15,
+    "name": "Oblepikha Siberica",
+    "nameRu": "Облепиховый крем для рук",
+    "url": "https://ir.ozone.ru/s3/multimedia-w/wc1000/6041232200.jpg",
+    "sizeType": "volume",
+    "size": "75 мл",
+    "type": ["Уход за руками"],
+    "barcode": "4602956097548",
+    "manufacturer": {
+      "name": "Natura Siberica",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "Natura Siberica",
+      "number": "4602956097548"
+    },
+    "itemNumber": "4602956097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 98.23,
+    "amount": 1
+  },
+  {
+    "id": 16,
+    "name": "7 северных трав",
+    "nameRu": "Зубная паста от кровоточивости десен",
+    "url": "https://ir.ozone.ru/s3/multimedia-8/wc1000/6010518992.jpg",
+    "sizeType": "weight",
+    "size": "100 г",
+    "type": ["Гигиена полости рта"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Natura Siberica",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "Natura Siberica",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 148.6,
+    "amount": 1
+  },
+  {
+    "id": 17,
+    "name": "MYSTERYAL ROSE",
+    "nameRu": "Mолочко для тела",
+    "url": "https://ir.ozone.ru/s3/multimedia-y/wc1000/6334880206.jpg",
+    "sizeType": "volume",
+    "size": "250 мл",
+    "type": ["Уход за руками", "Уход за телом"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Natura Siberica",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "Natura Siberica",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 68.24,
+    "amount": 1
+  },
+  {
+    "id": 18,
+    "name": "Eucerin UreaRepair",
+    "nameRu": "Увлажняющий крем с 5% мочевиной",
+    "url": "https://ir.ozone.ru/s3/multimedia-e/wc1000/6387182462.jpg",
+    "sizeType": "volume",
+    "size": "75 мл",
+    "type": ["Уход за руками", "Уход за телом"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Eucerin",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "Eucerin",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 348.76,
+    "amount": 1
+  },
+  {
+    "id": 19,
+    "name": "Eucerin Atopi Control",
+    "nameRu": "Лосьон для тела для взрослых, детей и младенцев",
+    "url": "https://ir.ozone.ru/s3/multimedia-f/wc1000/6387179619.jpg",
+    "sizeType": "weight",
+    "size": "250 мл",
+    "type": ["Уход за телом", "Уход за руками"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "Eucerin",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "Eucerin",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 448.2,
+    "amount": 1
+  },
+  {
+    "id": 20,
+    "name": "Damaged Protector Acid Shampoo",
+    "nameRu": "Шампунь для волос с аргановым маслом и коллагеном",
+    "url": "https://ir.ozone.ru/s3/multimedia-e/wc1000/6008579786.jpg",
+    "sizeType": "weight",
+    "size": "900 г",
+    "type": ["Уход за волосами"],
+    "barcode": "4604049097548",
+    "manufacturer": {
+      "name": "L'ador",
+      "number": "460404"
+    },
+    "brand": {
+      "name": "L'ador",
+      "number": "4604049097548"
+    },
+    "itemNumber": "4604049097548",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum ut justo, vestibulum sagittis iaculis iaculis. Quis mattis vulputate feugiat massa vestibulum duis. Faucibus consectetur aliquet sed pellentesque consequat consectetur congue mauris venenatis. Nunc elit, dignissim sed nulla ullamcorper enim, malesuada.",
+    "price": 648.7,
+    "amount": 1
+  }
+]
