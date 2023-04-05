@@ -9,60 +9,60 @@ import mail from '../../../image/icons/mail.svg';
 
 export const MobileMenu: React.FC = () => {
   return (
-    <div className="menu">
-      <div className="menu__content">
-        <ul className="menu__contacts">
-          <li className="menu__contact">
-            <img src={address} alt="" className="menu__icon" />
-            <div className="menu__info">
+    <div className="mobile-menu">
+      <div className="mobile-menu__content">
+        <ul className="mobile-menu__contacts">
+          <li className="mobile-menu__contact">
+            <img src={address} alt="" className="mobile-menu__icon" />
+            <div className="mobile-menu__info">
               <a
                 href="https://go.2gis.com/vuzwbp"
                 target="_blank"
-                className="menu__option"
+                className="mobile-menu__option"
                 rel="noreferrer"
               >
                 г. Кокчетав, ул. Ж. Ташенова 129Б
               </a>
-              <span className="menu__note">(Рынок Восточный)</span>
+              <span className="mobile-menu__note">(Рынок Восточный)</span>
             </div>
           </li>
-          <li className="menu__contact">
-            <img src={mail} alt="" className="menu__icon" />
-            <div className="menu__info">
-              <a href="mailto:opt.sultan@mail.ru" className="menu__option">
+          <li className="mobile-menu__contact">
+            <img src={mail} alt="" className="mobile-menu__icon" />
+            <div className="mobile-menu__info">
+              <a href="mailto:opt.sultan@mail.ru" className="mobile-menu__option">
                 opt.sultan@mail.ru
               </a>
-              <span className="menu__note">На связи в любое время</span>
+              <span className="mobile-menu__note">На связи в любое время</span>
             </div>
           </li>
-          <li className="menu__contact">
-            <img src={call} alt="" className="menu__icon" />
-            <div className="menu__info">
-              <span className="menu__option">Отдел продаж</span>
-              <span className="menu__note">+7 (777) 490-00-91</span>
-              <span className="menu__note menu__note--time">
+          <li className="mobile-menu__contact">
+            <img src={call} alt="" className="mobile-menu__icon" />
+            <div className="mobile-menu__info">
+              <span className="mobile-menu__option">Отдел продаж</span>
+              <span className="mobile-menu__note">+7 (777) 490-00-91</span>
+              <span className="mobile-menu__note mobile-menu__note--time">
                 время работы: 9:00-20:00
               </span>
             </div>
           </li>
-          <li className="menu__contact">
-            <span className="menu__btn-call"></span>
-            <span className="menu__order">Заказать звонок</span>
+          <li className="mobile-menu__contact">
+            <span className="mobile-menu__btn-call"></span>
+            <span className="mobile-menu__order">Заказать звонок</span>
           </li>
         </ul>
 
-        <h3 className="menu__title">Меню сайта:</h3>
-        <ul className="menu__mobile-list">
-          <li className="menu__list-item">О компании</li>
-          <li className="menu__list-item">Доставка и оплата</li>
-          <li className="menu__list-item">Возврат</li>
-          <li className="menu__list-item">Контакты</li>
+        <h3 className="mobile-menu__title">Меню сайта:</h3>
+        <ul className="mobile-menu__mobile-list">
+          <li className="mobile-menu__list-item">О компании</li>
+          <li className="mobile-menu__list-item">Доставка и оплата</li>
+          <li className="mobile-menu__list-item">Возврат</li>
+          <li className="mobile-menu__list-item">Контакты</li>
         </ul>
 
-        <div className="menu__mobile-button">
+        <div className="mobile-menu__mobile-button">
           <CustomButton
             title={'Прайс-лист'}
-            addedClass={'menu__button-text'}
+            addedClass={'mobile-menu__button-text'}
             imageSrc={priceList}
           />
         </div>

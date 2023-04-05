@@ -30,6 +30,7 @@ export const CatalogList: React.FC<Props> = ({ goods }) => {
       }
 
       setCurrentPage(currentPageNum);
+      window.scroll(0, 0);
     },
     [pagesCount]
   );

@@ -1,12 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../../../hooks/redux';
 
 import './CustomSearch.scss';
 
-type Props = {};
-
-export const CustomSearch: React.FC<Props> = () => {
+export const CustomSearch: React.FC = () => {
   return (
     <div className="search">
       <input type="text" className="search__input" placeholder="Поиск..." />
