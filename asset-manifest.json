@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_landing-sultan-main/static/css/main.b63d1365.css",
-    "main.js": "/my_landing-sultan-main/static/js/main.028edb18.js",
+    "main.css": "/my_landing-sultan-main/static/css/main.77616646.css",
+    "main.js": "/my_landing-sultan-main/static/js/main.73838a31.js",
     "static/media/InterBold.ttf": "/my_landing-sultan-main/static/media/InterBold.88fa7ae373b07b41ecce.ttf",
     "static/media/InterSemiBold.ttf": "/my_landing-sultan-main/static/media/InterSemiBold.4d56bb21f2399db8ad48.ttf",
     "static/media/InterMedium.ttf": "/my_landing-sultan-main/static/media/InterMedium.6dcbc9bed1ec438907ee.ttf",
@@ -43,11 +43,11 @@
     "static/media/arrow-back.svg": "/my_landing-sultan-main/static/media/arrow-back.5a3ebbf524233ddda3e3.svg",
     "static/media/arrow-down.svg": "/my_landing-sultan-main/static/media/arrow-down.90a0847e2609fe35eb180fd09df108b9.svg",
     "static/media/arrow-up.svg": "/my_landing-sultan-main/static/media/arrow-up.80566af4e2a61f1f1d7b01637e2cc31d.svg",
-    "main.b63d1365.css.map": "/my_landing-sultan-main/static/css/main.b63d1365.css.map",
-    "main.028edb18.js.map": "/my_landing-sultan-main/static/js/main.028edb18.js.map"
+    "main.77616646.css.map": "/my_landing-sultan-main/static/css/main.77616646.css.map",
+    "main.73838a31.js.map": "/my_landing-sultan-main/static/js/main.73838a31.js.map"
   },
   "entrypoints": [
-    "static/css/main.b63d1365.css",
-    "static/js/main.028edb18.js"
+    "static/css/main.77616646.css",
+    "static/js/main.73838a31.js"
   ]
 }
