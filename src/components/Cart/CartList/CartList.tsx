@@ -1,10 +1,10 @@
 import React from 'react';
-import { useAppSelector } from '../../hooks/redux';
-import { CartControl } from './CartControl';
-import { CartGood } from './CartGood/CartGood';
+import { useAppSelector } from '../../../hooks/redux';
+import { CartControl } from '../CartControl';
+import { CartGood } from '../CartGood/CartGood';
 import './CartList.scss';
 
-export const CartList: React.FC = () => {
+const CartList: React.FC = () => {
   const { goods } = useAppSelector((state) => state.cart);
 
   return (
@@ -18,3 +18,5 @@ export const CartList: React.FC = () => {
     </div>
   );
 };
+
+export default CartList;

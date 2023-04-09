@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch } from '../../../hooks/redux';
-import { addGood } from '../../../store/cartSlice';
+import { addGood } from '../../../store/reducers/cartSlice';
 
 import { Good } from '../../../types/Good';
 import { CustomButton } from '../../UI/CustomButton';

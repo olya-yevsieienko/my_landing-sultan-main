@@ -1,15 +1,15 @@
 import React from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { useResize } from '../../hooks/useResize';
-import { setFilterStatus } from '../../store/filterSlice';
-import { filterByCategory } from '../../store/goodsSlice';
+import { setFilterStatus } from '../../store/reducers/filterSlice';
+import { filterByCategory } from '../../store/reducers/goodsSlice';
 
 import { SidebarForm } from './Filter/Filter';
 import { CustomOpenButton } from '../UI/CustomOpenButton';
 import categories from '../../api/data/categories.json';
-import './SidebarFilter.scss';
+import './Sidebar.scss';
 
-export const SidebarFilter: React.FC = () => {
+export const Sidebar: React.FC = () => {
   const width = useResize();
   const { isFilterOpen } = useAppSelector((state) => state.filter);
   const dispatch = useAppDispatch();

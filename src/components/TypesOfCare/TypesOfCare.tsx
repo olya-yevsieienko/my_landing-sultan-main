@@ -1,33 +1,42 @@
 import React, { useState } from 'react';
-import { useAppDispatch } from '../../hooks/redux';
-import { filterByCategory } from '../../store/goodsSlice';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
+import { filterByCategory } from '../../store/reducers/goodsSlice';
 import { getEditedTitle } from '../../utils/getEditedTitle';
 import { useResize } from '../../hooks/useResize';
 
 import categories from '../../api/data/categories.json';
-import './GoodsCategories.scss';
+import './TypesOfCare.scss';
 
-export const GoodsCategories: React.FC = () => {
+const TypesOfCare: React.FC = () => {
   const [active, setActive] = useState(0);
   const dispatch = useAppDispatch();
+  const { filterCategory } = useAppSelector((state) => state.goods);
   const width = useResize();
 
   const handleChangeActive = (id: number) => {
-    setActive(id);
+    if (active === id) {
+      setActive(0);
+    } else {
+      setActive(id);
+    }
   };
 
   return (
-    <div className="categories">
-      <ul className="categories__list">
+    <div className="types">
+      <ul className="types__list">
         {categories.map((category) => (
           <li
             key={category.id}
-            className={`categories__item ${
-              active === category.id ? 'categories__item--active' : ''
+            className={`types__item ${
+              active === category.id ? 'types__item--active' : ''
             }`}
             data-index={category.id}
             onClick={() => {
-              dispatch(filterByCategory(category.title));
+              dispatch(
+                filterByCategory(
+                  filterCategory === category.title ? '' : category.title
+                )
+              );
               handleChangeActive(category.id);
             }}
           >
@@ -46,3 +55,5 @@ export const GoodsCategories: React.FC = () => {
     </div>
   );
 };
+
+export default TypesOfCare;

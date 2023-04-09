@@ -5,7 +5,7 @@ import './Footer.scss';
 import logo from '../../image/icons/logo-white.svg';
 import download from '../../image/icons/price-list.svg';
 
-export const Footer: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer__content">
@@ -118,3 +118,5 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
+
+export default Footer;

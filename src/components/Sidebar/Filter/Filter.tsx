@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useAppDispatch } from '../../../hooks/redux';
-import { setFilterStatus } from '../../../store/filterSlice';
-import { filterByParams } from '../../../store/goodsSlice';
+import { setFilterStatus } from '../../../store/reducers/filterSlice';
+import { filterByParams } from '../../../store/reducers/goodsSlice';
 import { getCountBrands, getListOfBrands } from '../../../utils/brands';
 import {
   getCountManufacturer,

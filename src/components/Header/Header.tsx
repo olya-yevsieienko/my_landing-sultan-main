@@ -14,8 +14,9 @@ import consultant from '../../image/consultant.png';
 import menuClosed from '../../image/icons/mobile-menu.svg';
 import menuOpened from '../../image/icons/menu-opened.svg';
 import './Header.scss';
+import { getRoundedNum } from '../../utils/getRoundedNum';
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { totalAmount, totalCount } = useAppSelector((state) => state.cart);
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <Navigation />
 
       <div className="header__content">
@@ -82,7 +83,9 @@ export const Header: React.FC = () => {
             </Link>
             <div className="header__descrpt">
               <span className="header__basket-name">Корзина</span>
-              <span className="header__amount">{totalAmount} ₸</span>
+              <span className="header__amount">
+                {getRoundedNum(totalAmount)} ₸
+              </span>
             </div>
           </div>
         </div>
@@ -103,6 +106,8 @@ export const Header: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
+
+export default Header;

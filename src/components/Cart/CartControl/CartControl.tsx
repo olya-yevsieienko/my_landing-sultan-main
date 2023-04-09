@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAppDispatch } from '../../../hooks/redux';
 import { Good } from '../../../types/Good';
-import { removeGood } from '../../../store/cartSlice';
+import { removeGood } from '../../../store/reducers/cartSlice';
 import { CustomControl } from '../../UI/CustomControl';
 import './CartControl.scss';
 

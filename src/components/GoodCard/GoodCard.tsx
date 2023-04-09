@@ -4,7 +4,7 @@ import {
   addGoodFromCardPage,
   incrementQuantityCardPage,
   decrementQuantityCardPage,
-} from '../../store/cartSlice';
+} from '../../store/reducers/cartSlice';
 import { Good } from '../../types/Good';
 import { CustomButton } from '../UI/CustomButton';
 

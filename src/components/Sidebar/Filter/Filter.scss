@@ -130,6 +130,10 @@
     @include onTablet {
       width: 120px;
     }
+
+    @include onDesktop {
+      width: 170px;
+    }
   }
 
   &__reset {

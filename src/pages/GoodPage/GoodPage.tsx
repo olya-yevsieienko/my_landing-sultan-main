@@ -19,7 +19,7 @@ export const GoodPage: React.FC<Props> = ({ goods }) => {
   }
 
   return (
-    <div className="good-card">
+    <section className="good-card">
       <div className="catalog__back">
         <CustomComeBack path="/catalog" />
       </div>
@@ -37,6 +37,6 @@ export const GoodPage: React.FC<Props> = ({ goods }) => {
       </ul>
 
       {selectedGood && <GoodCard good={selectedGood} />}
-    </div>
+    </section>
   );
 };

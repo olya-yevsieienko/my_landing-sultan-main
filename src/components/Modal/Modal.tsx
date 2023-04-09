@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import './Modal.scss';
-import { clearCart } from '../../store/cartSlice';
+import { clearCart } from '../../store/reducers/cartSlice';
 import { useAppDispatch } from '../../hooks/redux';
 
 type Props = {

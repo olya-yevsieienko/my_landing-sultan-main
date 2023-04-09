@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { getRoundedNum } from '../utils/getRoundedNum';
-import { Good } from '../types/Good';
+import { getRoundedNum } from '../../utils/getRoundedNum';
+import { Good } from '../../types/Good';
 
 interface CartState {
   goods: Good[];
@@ -43,10 +43,8 @@ const cartSlise = createSlice({
 
       let amount = 0;
       if (state.goods.length) {
-        state.goods.forEach(
-          (good) => (amount += getRoundedNum(good.price * good.amount))
-        );
-        state.totalAmount = getRoundedNum(amount);
+        state.goods.forEach((good) => (amount += good.price * good.amount));
+        state.totalAmount = amount;
         state.totalCount++;
       }
 
@@ -62,7 +60,7 @@ const cartSlise = createSlice({
 
       let amount = 0;
       state.goods.forEach((good) => (amount += good.price * good.amount));
-      state.totalAmount = getRoundedNum(amount);
+      state.totalAmount = amount;
 
       let count = 0;
       state.goods.forEach((good) => (count += good.amount));
@@ -79,7 +77,7 @@ const cartSlise = createSlice({
       const good = state.goods.find((item) => item.id === action.payload.id);
       if (good) {
         good.amount++;
-        state.totalAmount += getRoundedNum(good.price);
+        state.totalAmount += good.price;
         state.totalCount++;
       }
 
@@ -97,7 +95,7 @@ const cartSlise = createSlice({
         good.amount = 1;
       } else if (good && good.amount > 1) {
         good.amount--;
-        state.totalAmount -= getRoundedNum(good.price);
+        state.totalAmount -= good.price;
         state.totalCount--;
       }
 
@@ -123,7 +121,7 @@ const cartSlise = createSlice({
       let amount = 0;
       if (state.goods.length) {
         state.goods.forEach((good) => (amount += good.price * good.amount));
-        state.totalAmount = getRoundedNum(amount);
+        state.totalAmount = amount;
         state.totalCount = state.totalCount + state.goodAmount;
       }
 

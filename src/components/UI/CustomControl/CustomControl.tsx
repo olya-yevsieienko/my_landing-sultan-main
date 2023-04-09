@@ -1,6 +1,9 @@
 import React from 'react';
 import { useAppDispatch } from '../../../hooks/redux';
-import { incrementQuantity, decrementQuantity } from '../../../store/cartSlice';
+import {
+  incrementQuantity,
+  decrementQuantity,
+} from '../../../store/reducers/cartSlice';
 import { Good } from '../../../types/Good';
 
 import './CustomControl.scss';

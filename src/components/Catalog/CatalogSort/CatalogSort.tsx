@@ -4,7 +4,7 @@ import {
   sortByName,
   sortByPriceASC,
   sortByPriceDESC,
-} from '../../../store/goodsSlice';
+} from '../../../store/reducers/goodsSlice';
 
 import './CatalogSort.scss';
 

@@ -2,18 +2,19 @@ import React from 'react';
 import { useAppSelector } from '../../hooks/redux';
 import { useModal } from '../../hooks/useModal';
 
-import { CartList } from '../../components/CartList';
 import { CustomButton } from '../../components/UI/CustomButton';
 import { CustomComeBack } from '../../components/UI/CustomComeBack';
 import { Modal } from '../../components/Modal';
 import './CartPage.scss';
+import CartList from '../../components/Cart/CartList/CartList';
+import { getRoundedNum } from '../../utils/getRoundedNum';
 
 export const BasketPage = () => {
   const { isOpen, handleToggle } = useModal();
   const { totalAmount, goods } = useAppSelector((state) => state.cart);
 
   return (
-    <div className="cart">
+    <section className="cart">
       <div className="cart__back">
         <CustomComeBack path="./catalog" />
       </div>
@@ -44,7 +45,7 @@ export const BasketPage = () => {
             disabled={goods.length ? false : true}
           />
         </div>
-        <span className="cart__amount">{totalAmount} ₸</span>
+        <span className="cart__amount">{getRoundedNum(totalAmount)} ₸</span>
       </div>
 
       {goods.length ? (
@@ -52,6 +53,6 @@ export const BasketPage = () => {
       ) : (
         ''
       )}
-    </div>
+    </section>
   );
 };

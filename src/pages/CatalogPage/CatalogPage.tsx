@@ -3,11 +3,11 @@ import { useAppSelector } from '../../hooks/redux';
 
 import { CatalogList } from '../../components/Catalog/CatalogList';
 import { CatalogSort } from '../../components/Catalog/CatalogSort';
-import { SidebarFilter } from '../../components/SidebarFilter';
 import { CustomComeBack } from '../../components/UI/CustomComeBack';
-import { GoodsCategories } from '../../components/Categories';
 import { Good } from '../../types/Good';
 import './CatalogPage.scss';
+import { Sidebar } from '../../components/Sidebar';
+import TypesOfCare from '../../components/TypesOfCare/TypesOfCare';
 
 export const CatalogPage = () => {
   const { goods, updatedGoods, filterParams } = useAppSelector(
@@ -43,18 +43,18 @@ export const CatalogPage = () => {
       </div>
 
       <div className="catalog__categories">
-        <GoodsCategories />
+        <TypesOfCare />
       </div>
 
       {isFilterOpen ? (
         <div className="catalog__main">
-          <SidebarFilter />
+          <Sidebar />
         </div>
       ) : (
         <div className="catalog__main">
-          <SidebarFilter />
+          <Sidebar />
           <div className="catalog__categories--mobile">
-            <GoodsCategories />
+            <TypesOfCare />
           </div>
           <div className="catalog__mobile-sort">
             <CatalogSort />

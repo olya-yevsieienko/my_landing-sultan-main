@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Good } from '../types/Good';
-import goodsFromServer from '../api/data/goodsFromServer.json';
+import { Good } from '../../types/Good';
+import goodsFromServer from '../../api/data/goodsFromServer.json';
 
 interface GoodsState {
   goods: Good[];
@@ -22,9 +22,14 @@ const goodsSlice = createSlice({
   reducers: {
     filterByCategory: (state, action: PayloadAction<string>) => {
       state.filterCategory = action.payload;
-      state.updatedGoods = [...state.goods].filter((good) =>
-        good.type.includes(action.payload)
-      );
+
+      if (state.filterCategory === '') {
+        state.updatedGoods = [...state.goods];
+      } else {
+        state.updatedGoods = [...state.goods].filter((good) =>
+          good.type.includes(action.payload)
+        );
+      }
     },
     filterByParams: (state, action) => {
       state.filterParams = action.payload;
