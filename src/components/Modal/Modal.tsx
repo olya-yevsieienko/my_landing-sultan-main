@@ -20,9 +20,13 @@ export const Modal: React.FC<Props> = ({ isOpen, handleToggle }) => {
   return (
     <>
       {isOpen && (
-        <div className="modal">
+        <div className="modal" data-testid="modal">
           <div className="modal__content" onClick={(e) => e.stopPropagation()}>
-            <span className="modal__cross" onClick={handleCloseModal}></span>
+            <span
+              className="modal__cross"
+              onClick={handleCloseModal}
+              data-testid="modal-cross"
+            ></span>
 
             <span className="modal__done"></span>
             <p className="modal__title">Спасибо за заказ</p>

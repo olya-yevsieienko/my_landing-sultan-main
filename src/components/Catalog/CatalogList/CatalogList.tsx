@@ -37,7 +37,7 @@ export const CatalogList: React.FC<Props> = ({ goods }) => {
 
   return (
     <div className="list">
-      <div className="list__content">
+      <div className="list__content" data-testid={'catalog-list'}>
         {currentGoods.map((good) => (
           <CatalogGood good={good} key={good.id} />
         ))}

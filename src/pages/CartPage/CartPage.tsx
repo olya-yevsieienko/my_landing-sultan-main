@@ -9,12 +9,12 @@ import './CartPage.scss';
 import CartList from '../../components/Cart/CartList/CartList';
 import { getRoundedNum } from '../../utils/getRoundedNum';
 
-export const BasketPage = () => {
+export const CartPage = () => {
   const { isOpen, handleToggle } = useModal();
   const { totalAmount, goods } = useAppSelector((state) => state.cart);
 
   return (
-    <section className="cart">
+    <section className="cart" data-testid="cart-page">
       <div className="cart__back">
         <CustomComeBack path="./catalog" />
       </div>
@@ -36,7 +36,7 @@ export const BasketPage = () => {
 
       <div className="cart__footer">
         <span className="cart__amount--mobile">{totalAmount} ₸</span>
-        <div className="cart__order">
+        <div className="cart__order" data-testid="cart-order">
           <CustomButton
             title={'Оформить заказ'}
             addedClass={''}
@@ -49,7 +49,9 @@ export const BasketPage = () => {
       </div>
 
       {goods.length ? (
-        <Modal isOpen={isOpen} handleToggle={handleToggle} />
+        <div data-testid={'modal'}>
+          <Modal isOpen={isOpen} handleToggle={handleToggle} />
+        </div>
       ) : (
         ''
       )}

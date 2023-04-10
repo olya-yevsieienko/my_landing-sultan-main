@@ -84,7 +84,10 @@ const Header: React.FC = () => {
             <div className="header__descrpt">
               <span className="header__basket-name">Корзина</span>
               <span className="header__amount">
-                {getRoundedNum(totalAmount)} ₸
+                <span className="header__amount" data-testid={'header-amount'}>
+                  {getRoundedNum(totalAmount)}
+                </span>
+                ₸
               </span>
             </div>
           </div>

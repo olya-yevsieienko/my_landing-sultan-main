@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { getRoundedNum } from '../../utils/getRoundedNum';
 import { Good } from '../../types/Good';
 
 interface CartState {
@@ -18,7 +17,7 @@ const totalAmount = totalAmountLocal ? JSON.parse(totalAmountLocal) : 0;
 const totalCountLocal = localStorage.getItem('totalCount');
 const totalCount = totalCountLocal ? JSON.parse(totalCountLocal) : 0;
 
-const initialState: CartState = {
+export const initialState: CartState = {
   goods: cartGoods,
   goodAmount: 1,
   totalAmount: totalAmount,

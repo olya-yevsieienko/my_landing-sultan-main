@@ -3,7 +3,7 @@ import { useAppSelector } from '../hooks/redux';
 
 import { CatalogPage } from '../pages/CatalogPage';
 import { GoodPage } from '../pages/GoodPage';
-import { BasketPage } from '../pages/CartPage';
+import { CartPage } from '../pages/CartPage';
 
 const AppRouter = () => {
   const { goods } = useAppSelector((state) => state.goods);
@@ -14,7 +14,7 @@ const AppRouter = () => {
         <Route index element={<CatalogPage />} />
         <Route path=":name/:id" element={<GoodPage goods={goods} />} />
       </Route>
-      <Route path="/basket" element={<BasketPage />} />
+      <Route path="/basket" element={<CartPage />} />
       <Route path="*" element={<Navigate to="/catalog" replace />} />
     </Routes>
   );

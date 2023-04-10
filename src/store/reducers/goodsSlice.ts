@@ -9,7 +9,7 @@ interface GoodsState {
   filterParams: {};
 }
 
-const initialState: GoodsState = {
+export const initialState: GoodsState = {
   goods: goodsFromServer,
   updatedGoods: goodsFromServer,
   filterCategory: '',

@@ -21,7 +21,7 @@ export const CatalogPage = () => {
   }, [goods, updatedGoods, filterParams]);
 
   return (
-    <section className="catalog">
+    <section className="catalog" data-testid="catalog-page">
       <div className="catalog__back">
         <CustomComeBack path="" />
       </div>
